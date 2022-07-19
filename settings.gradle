@@ -1,0 +1,2 @@
+rootProject.name = 'gradle-XXX-redirecting-ivy-dependencies'
+include 'repository', 'library', 'consumer'
