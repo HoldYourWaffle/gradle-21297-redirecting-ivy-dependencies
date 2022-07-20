@@ -1,0 +1,14 @@
+plugins {
+    id 'application'
+}
+
+application {
+    mainClass = 'nl.holdyourcode.issues.gradle.XXX.repository.RepositoryServer'
+}
+
+run {
+    dependsOn(':library:jar')
+
+    def artifactLibrary = project(":library").configurations.archives.allArtifacts[0]
+    args = [ port, downloadUrl, artifactLibrary.file.absolutePath ]
+}

@@ -1,0 +1,4 @@
+ext {
+    port = 8000
+    downloadUrl = '/download'
+}
