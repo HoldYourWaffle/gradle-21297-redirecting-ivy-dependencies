@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    ivy {
+        url 'http://localhost:'+port
+        allowInsecureProtocol(true)
+
+        patternLayout {
+            artifact downloadUrl+'?file=[module].[ext]'
+        }
+
+        metadataSources { artifact() }
+    }
+}
+
+configurations.all {
+    // Disable build cache for debugging
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
+dependencies {
+    // Pull library from configured local ivy repository
+    implementation (':library:') { changing = true }
+}
