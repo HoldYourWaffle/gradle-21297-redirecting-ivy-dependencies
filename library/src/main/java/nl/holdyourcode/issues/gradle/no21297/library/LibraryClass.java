@@ -1,4 +1,4 @@
-package nl.holdyourcode.issues.gradle.XXX.library;
+package nl.holdyourcode.issues.gradle.no21297.library;
 
 public class LibraryClass {
 

@@ -3,7 +3,7 @@ plugins {
 }
 
 application {
-    mainClass = 'nl.holdyourcode.issues.gradle.XXX.repository.RepositoryServer'
+    mainClass = 'nl.holdyourcode.issues.gradle.no21297.repository.RepositoryServer'
 }
 
 run {

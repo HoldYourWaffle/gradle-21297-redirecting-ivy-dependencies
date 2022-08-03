@@ -1,4 +1,4 @@
-package nl.holdyourcode.issues.gradle.XXX.repository;
+package nl.holdyourcode.issues.gradle.no21297.repository;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpServer;
